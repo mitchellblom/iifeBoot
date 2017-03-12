@@ -1,6 +1,6 @@
 # NSS IFFE Bootstrap Exercise
 
-1. HTML create form
+<!-- 1. HTML create form -->
 2. Random hardcode for styling
 3. Add basic Bootstrap styling
 4. Event listeners in DOM handler
