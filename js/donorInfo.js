@@ -5,6 +5,7 @@ var DonorInfo = (function() {
 		return {
 			addDonorToArray: function (newDonor) {
 				donorArray.push(newDonor);
+				
 			},
 			queryDonor: function () {
 				return donorArray;
@@ -24,9 +25,6 @@ var DonorInfo = (function() {
 			}
 		}
 })();
-
-
-
 
 // 						<tr>
 // 				   			<td>Jane Doe</td>
