@@ -10,20 +10,17 @@ var DonorInfo = (function() {
 				return donorArray;
 			},
 			printToTable: function(newDonor) {
-				var writeToTable = document.getElementById("donor-info-goes-here");
-				// var tableString = `<tr>` 
-				// tableString += `<td>${newDonor.name}</td>`;
-				// tableString += `<td>${newDonor.email}</td>`;
-				// tableString += `<td>${newDonor.amount}</td>`;
-				// tableString += `<td>${newDonor.amount}</td>`;
-				// tableString += `</tr>` 
+				var writeToTable = document.getElementById("table");
+					writeToTable.innerHTML += `<table class="table table-bordered table-striped table-condensed">`
+					writeToTable.innerHTML += `<tr><th>Name</th><th>Email</th><th>Amount</th></tr>`
 				for (var i = 0; i < 1; i++){
 					writeToTable.innerHTML += `<tr>`;
 					writeToTable.innerHTML += `<td>${donorArray[i].name}</td>`;
 					writeToTable.innerHTML += `<td>${donorArray[i].email}</td>`;
 					writeToTable.innerHTML += `<td>${donorArray[i].amount}</td>`;
-					writeToTable.innerHTML += `</tr>` ;
+					writeToTable.innerHTML += `</tr>`;
 				}
+					writeToTable.innerHTML += `</table>`;
 			}
 		}
 })();
