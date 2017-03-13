@@ -7,7 +7,7 @@
 5. Log EL's
 6. Write IIFE to accept info
 7. Link input fields with IIFE
-8. Validate Amount $ input
+8. Validate Amount $ input and that all fields are complete
 9. Cancel button functionality 
 10. Apply grid system per device
 11. Alternate striping for table entries

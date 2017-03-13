@@ -14,4 +14,5 @@ donateButton.addEventListener("click", function() {
 	console.log("donate button works:", newDonor);
 	DonorInfo.addDonorToArray(newDonor);
 	console.log("donor array", DonorInfo.queryDonor());
+	DonorInfo.printToTable(newDonor);
 });

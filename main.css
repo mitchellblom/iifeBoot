@@ -1,3 +1,15 @@
 body {
 	background-color: darkorange;
 }
+
+h1 {
+	text-align: center;
+	padding: 2%;
+	font-family: impact, sans-serif;
+	font-size: 3.5em;
+}
+
+input {
+	padding: 1%;
+	margin: 1%;
+}

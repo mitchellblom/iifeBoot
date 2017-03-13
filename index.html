@@ -8,25 +8,61 @@
 </head>
 <body>
 
-	<h1>Walk-A-Thon Donation Page</h1>
+	<h1 class="col-md-12">Walk-A-Thon Donation Page</h1>
 
-	<form>
-		<input type="text" name="name" id="name" placeholder="Name" value="Donor's Name"></input>
-		<input type="email" name="email" id="email" placeholder="Email" value="donor@name.com"></input>
-		<input type="text" name="dollar-amt" id="amount" placeholder="Amount" value="$44"></input>
-	</form>
+	<div id="table" class="col-md-6">
+		<table class="table table-bordered table-striped table-condensed">
+			<th>
+				Name
+			</th>
+			<th>
+				Email
+			</th>
+			<th>
+				Amount
+			</th>
+			<th>
+				Frequency
+			</th>
 
-	<form class="navbar-form navbar-left" role="search">
-  		<button type="button" class="btn btn-default" id="donate-button">Donate</button>
-  		<button type="button" class="btn btn-default navbar-btn">Cancel</button>
+			<div id="donor-info-goes-here">
+					<tr>
+			   			<td>John Doe</td>
+			   			<td>jdoe@deer.com</td>
+			   			<td>$44</td>
+			   			<td>Lump Sum</td>
+ 					</tr>
+ 					<tr>
+			   			<td>Jane Doe</td>
+			   			<td>jdoe2@deer.com</td>
+			   			<td>$88</td>
+			   			<td>Lump Sum</td>
+ 					</tr>
 
-  		<label class="radio-inline">
- 			 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Lump Sum
-		</label>
-		<label class="radio-inline">
- 			 <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Per Lap
-		</label>
-	</form>
+			</div>
+		</table>
+	</div>
+	
+	<div class="col-md-6 table-bordered">
+		<h3>Registration:</h3>
+		<form>
+			<input type="text" name="name" id="name" placeholder="Name" value="Donor's Name"></input>
+			<input type="email" name="email" id="email" placeholder="Email" value="donor@name.com"></input>
+			<input type="text" name="dollar-amt" id="amount" placeholder="Amount" value="$44"></input>
+		</form>
+
+		<form class="navbar-form navbar-left" role="search">
+	  		<button type="button" class="btn btn-default" id="donate-button">Donate</button>
+	  		<button type="button" class="btn btn-default navbar-btn">Cancel</button>
+
+	  		<label class="radio-inline">
+	 			 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Lump Sum
+			</label>
+			<label class="radio-inline">
+	 			 <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Per Lap
+			</label>
+		</form>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
