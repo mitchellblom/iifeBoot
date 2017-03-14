@@ -12,19 +12,22 @@ var DonorInfo = (function() {
         },
         printToTable: function(newDonor) {
             var writeToTable = document.getElementById("table");
-                // writeToTable.innerHTML += `<thead>`;
-                // writeToTable.innerHTML += `<tr>`;
-                // writeToTable.innerHTML += `<th>Name</th>`;
-                // writeToTable.innerHTML += `<th>Email</th>`;  
-                // writeToTable.innerHTML += `<th>Amount</th>`;
-                // writeToTable.innerHTML += `</tr>`;
-                // writeToTable.innerHTML += `</thead>`;
+            var tableString = "";
+                // tableString.innerHTML += `<thead>`;
+                // tableString.innerHTML += `<tr>`;
+                // tableString.innerHTML += `<th>Name</th>`;
+                // tableString.innerHTML += `<th>Email</th>`;  
+                // tableString.innerHTML += `<th>Amount</th>`;
+                // tableString.innerHTML += `</tr>`;
+                // tableString.innerHTML += `</thead>`;
             for (var i = 0; i < 1; i++) {
-                writeToTable.innerHTML += `<tr>`;
-                writeToTable.innerHTML += `<td>${donorArray[i].name}</td>`;
-                writeToTable.innerHTML += `<td>${donorArray[i].email}</td>`;
-                writeToTable.innerHTML += `<td>${donorArray[i].amount}</td>`;
-                writeToTable.innerHTML += `</tr>`;
+                console.log("entered for loop");
+                tableString += `<tr>`;
+                tableString += `<td>${donorArray[i].name}</td>`;
+                tableString += `<td>${donorArray[i].email}</td>`;
+                tableString += `<td>${donorArray[i].amount}</td>`;
+                tableString += `</tr>`;
+                writeToTable.innerHTML += tableString;
             }
         }
     }
