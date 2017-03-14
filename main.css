@@ -13,3 +13,7 @@ input {
 	padding: 1%;
 	margin: 1%;
 }
+
+tr:nth-child(2n + 1) {
+
+}
