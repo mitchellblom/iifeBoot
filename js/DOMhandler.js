@@ -2,6 +2,7 @@
 
 var newDonor = {};
 var donateButton = document.getElementById("donate-button");
+var cancelButton = document.getElementById("cancel-button");
 
 ////////////// LISTENERS /////////////////////////////
 
@@ -22,3 +23,8 @@ document.onkeydown = function() {
    	DonorInfo.printToTable(newDonor);
  }
 };
+
+cancelButton.addEventListener("click", function() {
+	console.log("cancel button works");
+	// DonorInfo.donorArray = [];
+});
