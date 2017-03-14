@@ -26,5 +26,6 @@ document.onkeydown = function() {
 
 cancelButton.addEventListener("click", function() {
 	console.log("cancel button works");
-	// DonorInfo.donorArray = [];
+	// var toClear = document.getElementById("donorData");
+	// toClear.map.prototype.clear();
 });

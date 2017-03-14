@@ -15,3 +15,4 @@
 1. Clear input fields upon Enter or Donate button click
 1. Complete Bootstrap requirements
 1. Remove hard coding used for testing
+1. Round the donation input to two decimal places

@@ -13,7 +13,7 @@ var DonorInfo = (function() {
             var writeToTable = document.getElementById("table");
             var tableString = "";
             for (var i = 0; i < 1; i++) {
-                tableString += `<tr>`;
+                tableString += `<tr id="donorData">`;
                 tableString += `<td>${donorArray[i].name}</td>`;
                 tableString += `<td>${donorArray[i].email}</td>`;
                 tableString += `<td>${donorArray[i].amount}</td>`;
