@@ -3,8 +3,6 @@
 var newDonor = {};
 var donateButton = document.getElementById("donate-button");
 
-
-
 ////////////// LISTENERS /////////////////////////////
 
 donateButton.addEventListener("click", function() {
