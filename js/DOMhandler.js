@@ -17,6 +17,8 @@ document.onkeydown = function() {
 
 cancelButton.addEventListener("click", function() {
 	console.log("cancel button works");
+	var writeToTable = document.getElementById("table");
+	writeToTable.innerHTML = "";
 	// var toClear = document.getElementById("donorData");
 	// toClear.map.prototype.clear();
 });
