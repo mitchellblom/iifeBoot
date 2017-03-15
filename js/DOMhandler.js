@@ -3,6 +3,8 @@
 var newDonor = {};
 var donateButton = document.getElementById("donate-button");
 var cancelButton = document.getElementById("cancel-button");
+var writeToTableDom = document.getElementById("table");
+var allTextInputs = document.getElementsByName("text-input");
 
 ////////////// LISTENERS /////////////////////////////
 
@@ -10,19 +12,14 @@ donateButton.addEventListener("click", writeDonorInfoToDom);
 
 
 document.onkeydown = function() {
- if (window.event.keyCode === 13) {
+	if (window.event.keyCode === 13) {
  	writeDonorInfoToDom()
- }
+ 	}
 };
 
 cancelButton.addEventListener("click", function() {
-	console.log("cancel button works");
-	var writeToTable = document.getElementById("table");
-	writeToTable.innerHTML = "";
-	// var toClear = document.getElementById("donorData");
-	// toClear.map.prototype.clear();
+	writeToTableDom.innerHTML = "";
 });
-
 
 ////////////// LOGIC /////////////////////////////////
 
@@ -32,4 +29,10 @@ function writeDonorInfoToDom() {
 	newDonor.amount = document.getElementById("amount").value;
 	DonorInfo.addDonorToArray(newDonor);
 	DonorInfo.printToTable(newDonor);
+	// for (var i = 0; i < 3; i++) {
+	// 	console.log("this");
+	// 	console.log(allTextInputs);
+	// }
+	// console.log(allTextInputs);
+	// allTextInputs.value = "";
 };
