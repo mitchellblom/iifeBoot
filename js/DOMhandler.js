@@ -29,17 +29,14 @@ function writeDonorInfoToDom() {
 	newDonor.amount = document.getElementById("amount").value;
 	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "") {
 		alert("All fields must be complete!")
-	} 
-		if else {
-			
-		}	else {
-			DonorInfo.addDonorToArray(newDonor);
-			DonorInfo.printToTable(newDonor);
-			// for (var i = 0; i < 3; i++) {
-			// 	console.log("this");
-			// 	console.log(allTextInputs);
-			// }
-			// console.log(allTextInputs);
-			// allTextInputs.value = "";
-			};
+	} else {
+	DonorInfo.addDonorToArray(newDonor);
+	DonorInfo.printToTable(newDonor);
+	// for (var i = 0; i < 3; i++) {
+	// 	console.log("this");
+	// 	console.log(allTextInputs);
+	// }
+	// console.log(allTextInputs);
+	// allTextInputs.value = "";
+	};
 };

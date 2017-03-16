@@ -5,6 +5,21 @@
 	<title>Walk-A-Thon Donations</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<SCRIPT language=Javascript>
+       <!--
+       // function isNumberKey(evt)
+       // {
+       //    var charCode = (evt.which) ? evt.which : evt.keyCode;
+       //    if (charCode != 46 && charCode > 31 
+       //      && (charCode < 48 || charCode > 57))
+       //       return false;
+
+       //    return true;
+       // }
+       //-->
+    </SCRIPT>
+
 </head>
 <body>
 
@@ -32,7 +47,7 @@
 		<form>
 			<input type="text" name="name" id="name" placeholder="Name" class="text-input"></input>
 			<input type="email" name="email" id="email" placeholder="Email" class="text-input"></input>
-			<input type="text" name="dollar-amt" id="amount" placeholder="Amount" class="text-input"></input>
+			<input type="text" name="dollar-amt" id="amount" placeholder="Amount" class="text-input" onkeypress="return DonorInfo.isNumberKey(event)"></input>
 		</form>
 
 		<form class="navbar-form navbar-left" role="search">
