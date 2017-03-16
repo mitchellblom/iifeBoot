@@ -4,12 +4,19 @@ var newDonor = {};
 var donateButton = document.getElementById("donate-button");
 var cancelButton = document.getElementById("cancel-button");
 var writeToTableDom = document.getElementById("table");
-var allTextInputs = document.getElementsByName("text-input");
+var alphaTextInputsForm = document.getElementsByClassName("alpha-inputs");
+var allTextInputsForm = document.getElementsByClassName("all-text-inputs");
 
 ////////////// LISTENERS /////////////////////////////
 
 donateButton.addEventListener("click", writeDonorInfoToDom);
 
+// document.addEventListener("keyup", function() {
+// 	for (var i = 0; i < alphaTextInputsForm.length; i++) {
+// 		console.log("in text for loop");
+// 	    alphaTextInputsForm[i].addEventListener("keyup", alphaOnly);
+// 	};
+// });
 
 document.onkeydown = function() {
 	if (window.event.keyCode === 13) {
@@ -23,6 +30,11 @@ cancelButton.addEventListener("click", function() {
 
 ////////////// LOGIC /////////////////////////////////
 
+// function alphaOnly(event) {
+//   var key = event.keyCode;
+//   return ((key >= 65 && key <= 90) || key == 8);
+// };
+
 function writeDonorInfoToDom() {
 	newDonor.name = document.getElementById("name").value;
 	newDonor.email = document.getElementById("email").value;
@@ -32,11 +44,11 @@ function writeDonorInfoToDom() {
 	} else {
 	DonorInfo.addDonorToArray(newDonor);
 	DonorInfo.printToTable(newDonor);
-	// for (var i = 0; i < 3; i++) {
-	// 	console.log("this");
-	// 	console.log(allTextInputs);
+	// console.log(allTextInputsForm);
+	// for (var i = 0; i < allTextInputsForm.length; i++) {
+	// 	console.log("for loop to clear inputs");
+	// 	// console.log(allTextInputsForm[i]);
+	// 	allTextInputsForm[i].value = "";
 	// }
-	// console.log(allTextInputs);
-	// allTextInputs.value = "";
 	};
 };

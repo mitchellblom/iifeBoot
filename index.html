@@ -44,10 +44,10 @@
 	
 	<div class="col-md-6 table-bordered">
 		<h3>Registration:</h3>
-		<form>
-			<input type="text" name="name" id="name" placeholder="Name" class="text-input"></input>
-			<input type="email" name="email" id="email" placeholder="Email" class="text-input"></input>
-			<input type="text" name="dollar-amt" id="amount" placeholder="Amount" class="text-input" onkeypress="return DonorInfo.isNumberKey(event)"></input>
+		<form id="all-text-inputs">
+			<input type="text" name="name" id="name" placeholder="Name" class="text-input alpha-inputs"></input>
+			<input type="email" name="email" id="email" placeholder="Email" class="text-input alpha-inputs"></input>
+			$<input type="text" name="dollar-amt" id="amount" placeholder="Amount" class="text-input" onkeypress="return DonorInfo.isNumberKey(event)"></input>
 		</form>
 
 		<form class="navbar-form navbar-left" role="search">

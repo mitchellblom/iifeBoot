@@ -11,7 +11,7 @@
 <!-- 1. Link input fields with IIFE -->
 <!-- 1. Alternate striping for table entries -->
 <!-- 1. Apply Cancel button functionality  -->
-1. Validate Amount $ input and that all fields are complete
+<!-- 1. Validate Amount $ input and that all fields are complete -->
 1. Apply grid system per device
 1. Add Frequency/radio button functionality
 1. Clear input fields upon Enter or Donate button click
