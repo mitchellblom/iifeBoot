@@ -27,12 +27,19 @@ function writeDonorInfoToDom() {
 	newDonor.name = document.getElementById("name").value;
 	newDonor.email = document.getElementById("email").value;
 	newDonor.amount = document.getElementById("amount").value;
-	DonorInfo.addDonorToArray(newDonor);
-	DonorInfo.printToTable(newDonor);
-	// for (var i = 0; i < 3; i++) {
-	// 	console.log("this");
-	// 	console.log(allTextInputs);
-	// }
-	// console.log(allTextInputs);
-	// allTextInputs.value = "";
+	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "") {
+		alert("All fields must be complete!")
+	} 
+		if else {
+			
+		}	else {
+			DonorInfo.addDonorToArray(newDonor);
+			DonorInfo.printToTable(newDonor);
+			// for (var i = 0; i < 3; i++) {
+			// 	console.log("this");
+			// 	console.log(allTextInputs);
+			// }
+			// console.log(allTextInputs);
+			// allTextInputs.value = "";
+			};
 };
