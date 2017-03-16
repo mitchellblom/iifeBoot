@@ -4,8 +4,6 @@ var newDonor = {};
 var donateButton = document.getElementById("donate-button");
 var cancelButton = document.getElementById("cancel-button");
 var writeToTableDom = document.getElementById("table");
-var alphaTextInputsForm = document.getElementsByClassName("alpha-inputs");
-var allTextInputsForm = document.getElementsByClassName("all-text-inputs");
 var walkerName = document.getElementById("name");
 var email = document.getElementById("email");
 var amount = document.getElementById("amount");
@@ -30,6 +28,8 @@ function writeDonorInfoToDom() {
 	newDonor.name = document.getElementById("name").value;
 	newDonor.email = document.getElementById("email").value;
 	newDonor.amount = document.getElementById("amount").value;
+	newDonor.frequency = document.getElementsByClassName("radio-inline");
+	console.log("newDonor.frequency", newDonor.frequency);
 	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "") {
 		alert("All fields must be complete!")
 	} else {
