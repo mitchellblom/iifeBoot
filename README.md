@@ -14,7 +14,7 @@
 <!-- 1. Validate Amount $ input and that all fields are complete -->
 <!-- 1. Clear input fields upon Enter or Donate button click -->
 <!-- 1. Remove hard coding used for testing -->
+<!-- 1. Apply grid system per device -->
+<!-- 1. Complete Bootstrap requirements -->
 1. Add Frequency/radio button functionality
-1. Apply grid system per device
-1. Complete Bootstrap requirements
-1. Round the donation input to two decimal places
+1. (Round the donation input to two decimal places)
