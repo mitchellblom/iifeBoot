@@ -7,47 +7,46 @@ var writeToTableDom = document.getElementById("table");
 var walkerName = document.getElementById("name");
 var email = document.getElementById("email");
 var amount = document.getElementById("amount");
-var frequencyToWrite = "";
+// var frequency = document.getElementsByName("inlineRadioOptions")
 
 ////////////// LISTENERS /////////////////////////////
 
 donateButton.addEventListener("click", writeDonorInfoToDom);
 
 document.onkeydown = function() {
-	if (window.event.keyCode === 13) {
- 	writeDonorInfoToDom()
- 	}
+    if (window.event.keyCode === 13) {
+        writeDonorInfoToDom()
+    }
 };
 
 cancelButton.addEventListener("click", function() {
-	writeToTableDom.innerHTML = "";
+    writeToTableDom.innerHTML = "";
 });
 
 ////////////// LOGIC /////////////////////////////////
 
 function writeDonorInfoToDom() {
-	newDonor.name = document.getElementById("name").value;
-	newDonor.email = document.getElementById("email").value;
-	newDonor.amount = document.getElementById("amount").value;
-	newDonor.frequency = document.getElementsByName("inlineRadioOptions");
-	for (var i = 0; i < 2; i++) {
-		// console.log("newDonor.frequency[i]", newDonor.frequency[i]);
-		if (newDonor.frequency[i].checked) {
-			newDonor.frequency = newDonor.frequency[i].value
-			console.log(newDonor.frequency);
-		}
-	}
-	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "" || newDonor.frequency === "") {
-		alert("All fields must be complete!")
-	} else {
-	DonorInfo.addDonorToArray(newDonor);
-	DonorInfo.printToTable(newDonor);
-	clearAllInputs();
-	};
+    newDonor.name = document.getElementById("name").value;
+    newDonor.email = document.getElementById("email").value;
+    newDonor.amount = document.getElementById("amount").value;
+    newDonor.frequency = document.getElementsByName("inlineRadioOptions");
+    for (var i = 0; i < 2; i++) {
+        if (newDonor.frequency[i].checked) {
+            newDonor.frequency = newDonor.frequency[i].value
+        }
+
+    }
+    if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "" || newDonor.frequency === "") {
+        alert("All fields must be complete!")
+    } else {
+        DonorInfo.addDonorToArray(newDonor);
+        DonorInfo.printToTable(newDonor);
+        clearAllInputs();
+    };
 };
 
 function clearAllInputs() {
-	walkerName.value = "";
-	email.value = "";
-	amount.value = "";
+    walkerName.value = "";
+    email.value = "";
+    amount.value = "";
 };
