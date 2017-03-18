@@ -1,13 +1,13 @@
 # NSS IFFE Bootstrap Exercise
 
-![Splashpage]()
+![Splashpage](https://raw.githubusercontent.com/mitchellblom/iifeBoot/iifeBoot/iifeBoot.png)
 
 ## Project Summary / Demonstrated:
  - Writing from **Form** to **Dom** via an **IIFE augmenter**, and using **Bootstrap** framework to style.
 
  <hr>
 
-## Requirements-Turned-Planning-Checklist
+## Requirements-Turned-Planning-Checklist:
 1. HTML create form
 1. Random hardcode for styling
 1. Add basic Bootstrap styling
