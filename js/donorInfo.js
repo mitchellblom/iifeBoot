@@ -17,6 +17,7 @@ var DonorInfo = (function() {
                 tableString += `<td>${donorArray[i].name}</td>`;
                 tableString += `<td>${donorArray[i].email}</td>`;
                 tableString += `<td>$ ${donorArray[i].amount}</td>`;
+                tableString += `<td>${donorArray[i].frequency}</td>`;
                 tableString += `</tr>`;
                 writeToTable.innerHTML += tableString;
             }

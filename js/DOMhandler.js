@@ -29,15 +29,15 @@ function writeDonorInfoToDom() {
 	newDonor.name = document.getElementById("name").value;
 	newDonor.email = document.getElementById("email").value;
 	newDonor.amount = document.getElementById("amount").value;
-	newDonor.freqOptions = document.getElementsByName("inlineRadioOptions");
-	for (var i = 0; i < newDonor.freqOptions.length; i++) {
-		console.log("newDonor.freqOptions[i]", newDonor.freqOptions[i]);
-		if (newDonor.freqOptions[i].checked) {
-			frequencyToWrite = newDonor.freqOptions[i].value
-			console.log(frequencyToWrite);
+	newDonor.frequency = document.getElementsByName("inlineRadioOptions");
+	for (var i = 0; i < 2; i++) {
+		// console.log("newDonor.frequency[i]", newDonor.frequency[i]);
+		if (newDonor.frequency[i].checked) {
+			newDonor.frequency = newDonor.frequency[i].value
+			console.log(newDonor.frequency);
 		}
 	}
-	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "" || frequencyToWrite === "") {
+	if (newDonor.name === "" || newDonor.email === "" || newDonor.amount === "" || newDonor.frequency === "") {
 		alert("All fields must be complete!")
 	} else {
 	DonorInfo.addDonorToArray(newDonor);
