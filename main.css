@@ -1,5 +1,6 @@
 body {
 	background-color: darkorange;
+	padding: 15px;
 }
 
 h1 {
@@ -12,8 +13,4 @@ h1 {
 input {
 	padding: 1%;
 	margin: 1%;
-}
-
-tr:nth-child(2n + 1) {
-
 }
