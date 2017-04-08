@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Walk-A-Thon Donations</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<SCRIPT language=Javascript>
+       <!--
+       // function isNumberKey(evt)
+       // {
+       //    var charCode = (evt.which) ? evt.which : evt.keyCode;
+       //    if (charCode != 46 && charCode > 31 
+       //      && (charCode < 48 || charCode > 57))
+       //       return false;
+
+       //    return true;
+       // }
+       //-->
+    </SCRIPT>
+
+</head>
+<body>
+
+	<h1 class="col-md-12">Walk-A-Thon Donation Page</h1>
+
+	<div  class="col-md-6">
+
+		<table class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Amount</th>
+						<th>Frequency</th>
+					</tr>
+				</thead>
+			<tbody id="table">
+					<!-- Donor HTML gets written here from donorInfo functions -->
+			</tbody>
+		</table>
+
+	</div>
+	
+	<div class="col-md-6 table-bordered">
+		<h3>Registration:</h3>
+		<form id="all-text-inputs">
+			<input type="text" name="name" id="name" placeholder="Name" class="text-input alpha-inputs"></input>
+			<input type="email" name="email" id="email" placeholder="Email" class="text-input alpha-inputs"></input>
+			$<input type="text" name="dollar-amt" id="amount" placeholder="Amount" class="text-input" onkeypress="return DonorInfo.isNumberKey(event)"></input>
+		</form>
+
+		<form class="navbar-form navbar-left" role="search">
+	  		<button type="button" class="btn btn-default" id="donate-button">Donate</button>
+	  		<button type="button" class="btn btn-default navbar-btn" id="cancel-button">Cancel</button>
+
+	  		<label>
+	 			 <input type="radio" name="inlineRadioOptions" value="Lump Sum" class="radio-inline" checked="checked">Lump Sum</input>
+			</label>
+			<label>
+	 			 <input type="radio" name="inlineRadioOptions" value="Per Lap" class="radio-inline">Per Lap</input>
+			</label>
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/donorInfo.js"></script>
+	<script type="text/javascript" src="js/DOMhandler.js"></script>
+</body>
+</html>
